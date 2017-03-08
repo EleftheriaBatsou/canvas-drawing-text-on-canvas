@@ -1,0 +1,30 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+function draw(){
+    var ctx = document.getElementById('my_canvas').getContext('2d');
+    // fillText(text, x, y, maxWidth )
+    // strokeText(text, x, y, maxWidth )
+    ctx.fillStyle = '#FC0';
+    ctx.font = 'italic bold 56px Arial, sans-serif';
+    ctx.fillText('Text On Canvas', 50, 50, 300);
+    ctx.textAlign = 'start'; // start, end, left, right, center
+    ctx.textBaseline = 'hanging'; // top, middle, bottom, hanging, alphabetic, ideographic
+    ctx.strokeText('Text On Canvas', 50, 50, 300);
+}
+window.onload = draw;
+</script>
+</head>
+<body>
+  
+  <h3 style="text-align: center">Canvas | Drawing Text on Canvas </h3>
+  
+<canvas id="my_canvas" width="500" height="350"></canvas>
+  
+  <div style="text-align: center">
+    <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+  </div> <!-- end footer -->
+  
+</body>  
+</html>
